@@ -1,0 +1,524 @@
+
+
+
+Chapter 8: Abstraction and Classes
+
+The Complexity of Software
+10,000,000 – 100,000,000 line of codes  Microsoft Windows 2000 Kernel
+100,000,000 - 1,000,000,000 line of codes  Debian Linux Operating System
+
+
+Interactions (may) Grow Exponentially
+
+Abstraction
+One of the most powerful techniques available to combat complexity is abstraction, , a means of simplifying a complex program to a manageable level. 
+
+The Wall of Abstraction
+the information barrier between a device and how it works
+
+Abstractions are Imprecise
+
+Interfaces
+The wall of abstraction sits at the boundary between two worlds – the world of the implementer, where the workings of the mechanism are of paramount importance, and the world of the client, where the observable behavior is all that matters. 
+
+An extremely important point to note is the relation between interfaces and abstractions. Abstraction is a general term that describes how to simplify systems by separating the role of the client and the implementer. Interfaces are the means by which abstractions are actually modeled in software systems. Whenever one speaks of abstraction in programming, it usually refers to designing an interface.
+
+Encapsulation(封装)
+Breaking the wall of abstraction is bad.
+breaking the wall of abstraction allows clients to severely hurt themselves by tweaking a complex system.
+breaking the wall of abstraction hurts system flexibility.
+
+If an abstraction does not allow clients to look at the implementation under any circumstance, that abstraction is said to be encapsulated.
+
+
+
+
+
+
+
+
+Chapter 7: STL Algorithms
+
+In theory, you could compile an enormous library containing solutions to all nontrivial programming problems. With this library in tow, you could easily write programs by just stitching together these prewritten components.
+Unfortunately, there is no one library with the solutions to every programming problem. However, this hasn't stopped the designers of the STL from trying their best to build one. These are the STL algorithms, a library of incredibly powerful routines for processing data.
+
+Your First Algorithm: accumulate
+
+defined in the <numeric> header,
+
+takes three parameters – two iterators that define a range of elements, and an initial value to use in the summation.
+
+If STL algorithms are just functions that use loops behind the scenes, why even bother with them? 
+simplicity
+correctness
+speed
+clarity
+
+Algorithm Naming Conventions
+
+There are over fifty STL algorithms (defined either in <algorithm> or in <numeric>), and memorizing them all would be a chore, to say the least.
+
+Fortunately, many of them have common naming conventions so you can recognize algorithms even if you've never encountered them before.
+
+_if (replace_if, count_if, etc.) means the algorithm will perform a task on elements only if they meet a certain criterion. 
+
+bool IsEven(int value) {
+    return value % 2 == 0;
+}
+count_if(myVec.begin(), myVec.end(), IsEven)
+
+_n (generate_n, search_n, etc), then it will perform a certain operation n times.
+
+fill_n(myDeque.begin(), 10, 0);
+
+conjunction with vector and deque, it is illegal to use + operator with iterators for other container classes like map and set. 
+
+
+Iterator Categories
+
+Output Iterators
+*myItr = value
+can advance the iterator forward one step using the ++ operator.
+++ operator
+cannot use the += or – operator
+
+Input Iterators
+value = *myItr
+cannot iterate over the same range twice
+
+Forward Iterators
+*myItr = value and value = *myItr.
+can only move forward, ++myItr is legal
+--myItr is not
+
+Bidirectional Iterators
+map and set 
+forward and backwards
+cannot respond to the + or += operators
+
+Random-Access Iterators
+vector and deque
+maximum possible functionality, including iterator-from-iterator subtraction, bracket syntax, and incrementation with + and +=
+
+Reordering Algorithms
+sort
+sort(myVector.begin(), myVector.end());
+
+struct placeT {
+int x;
+int y;
+};
+
+bool ComparePlaces(placeT one, placeT two) {
+if(one.x != two.x)
+return one.x < two.x;
+return one.y < two.y;
+}
+
+sort(myPlaceVector.begin(), myPlaceVector.end(), ComparePlaces);
+
+random_shuffle(myVector.begin(), myVector.end());
+
+rotate(v.begin(), v.begin() + 2, v.end());
+
+Searching Algorithms
+find
+accepts two iterators delineating a range and a value, then returns an iterator to the first element in the range with that value.
+
+if(find(myVector.begin(), myVector.end(), 137) != myVector.end())
+
+Although you can legally pass map and set iterators as parameters to find, you should avoid doing so. The set's find member function can locate elements in around twenty steps using binary search,
+
+binary_search
+Note that binary_search doesn't return an iterator to the element, it simply checks to see if it's in the container.
+
+If you want to do a binary search in order to get an iterator to an element, you can use the
+lower_bound algorithm.
+
+Iterator Adaptors
+
+Iterator adaptors (defined in the <iterator> header) are objects that act like iterators – they can be dereferenced with * and advanced forward with ++ – but which don't actually point to elements of a container.
+ostream_iterators don't actually point to elements in a container. Whenever you dereference
+an ostream_iterator and assign a value to it, that value is printed to a specified output stream, such as cout or an ofstream.
+
+ostream_iterator<int> myItr(cout, " ");
+
+copy(myVector.begin(), myVector.end(), ostream_iterator<int>(cout, " "));
+
+vector<int> myVector; /* Initially empty */
+/* Create a back_insert_iterator that inserts values into myVector. */
+back_insert_iterator< vector<int> > itr(myVector);
+for (int i = 0; i < 10; ++i) {
+    *itr = i; // "Write" to the back_insert_iterator, appending the value.
+    ++itr;
+}
+
+istream_iterator can be used to read values from a stream as if it were a container of elements
+
+copy(istream_iterator<int>(input), istream_iterator<int>(), inserter(values, values.begin());
+
+Whenever a value is read from an istream_iterator, the iterator uses the stream extraction operator >> to read a value of the proper type from the input stream, then returns it. Consequently, the iterator istream_iterator<int>(input) is an iterator that reads int values out of the stream input.
+
+Removal Algorithms
+
+Despite their name, removal algorithms do not actually remove elements from containers.
+ 0 1 2 3 3 4(container) -> 0 1 2 4 3 3(container) -> 0 1 2 4(interator range)
+they return iterators to the first element not in the modified range
+
+To truly remove elements from a container with the removal algorithms, you can use the container class member function erase to erase the range of values that aren't in the result.
+myVector.erase(remove(myVector.begin(), myVector.end(), 137), myVector.end());
+
+string StripPunctuation(string input) {
+    input.erase(remove_if(input.begin(), input.end(), ispunct), input.end());
+    return input;
+}
+
+Other Noteworthy Algorithms
+
+transform, which applies a function to a range of elements and stores the result in the specified destination
+
+string ConvertToLowerCase(string text) {
+    transform(text.begin(), text.end(), text.begin(), tolower);
+    return text;
+}
+
+swap
+min_element and max_element 
+
+
+A Word on Compatibility
+
+No compilers on the market fully adhere to the standard, and almost universally compiler writers will make minor changes to the standard that decrease portability.
+
+:: syntax is the scope-resolution (范围解析操作符) operator and tells C++ that the tolower function is the original C function rather than the one exported by the <locale> header.
+
+More to Explore
+1. <cctype>: This chapter briefly mentioned the <cctype> header, the C runtime library's character type library. 
+2. <cmath>: The C mathematics library has all sorts of nifty functions that perform arithmetic operations like sin, sqrt, and exp.
+3. Boost Algorithms: As with most of the C++ Standard Library, the Boost C++ Libraries have a whole host of useful STL algorithms ready for you to use. 
+
+
+
+
+Chapter 6: STL Associative Containers and Iterators
+
+The set container 
+represents an arbitrary, unordered collection of elements
+
+Adding elements to the collection.
+Removing elements from the collection.
+Determining whether a particular element is in the collection.
+
+.count
+.insert
+.erase
+.size
+.clear
+
+sets can only hold one type of element
+set can only store objects that can be compared using the < operator(because internally, the set is layered on top of a balanced binary tree, a special data structure that naturally supports the set's main operations)
+cannot store custom structs inside of an STL set
+
+Traversing Containers with Iterators
+iteration, traversing the contents of a container and performing some task on every element.
+
+vector<int> myVector = /* ... some initialization ... */
+for (vector<int>::iterator itr = myVector.begin(); itr != myVector.end(); ++itr)
+    cout << *itr << endl;
+
+When traversing set elements via an iterator, the elements will be visited in sorted order, starting with the smallest element and ending with the largest. 
+
+(*itr).length()
+itr->length()
+
+Defining Ranges with Iterators
+[ begin(), end()) 
+
+lower_bound accepts a value, then returns an iterator to the first element in the set greater than or equal to that value.
+upper_bound similarly accepts a value and returns an iterator to the first element in the set that is strictly greater than the specified element. 
+
+A Useful Helper: pair
+pair<TypeOne, TypeTwo>
+
+pair<int, string> myPair;
+myPair.first = 137;
+myPair.second = "C++ is awesome!";
+
+pair<int, string> myPair = make_pair(137, "string!");
+
+Representing Relationships with map
+manages a relationship between a set of keys and a set of values
+
+the map is parameterized over two types, the type of the key and the type of the value.
+
+Like the STL set, behind the scenes the map is implemented using a balanced binary tree. This means that the keys in the map must be comparable using the less-than operator. However the values in the map needn't be comparable.
+
+map<string, int> numberMap;
+numberMap["zero"] = 0;
+numberMap["one"] = 1;
+numberMap["two"] = 2;
+
+Indexing into a vector into a nonexistent position will cause undefined behavior, likely a full program crash. Indexing into a map into a nonexistent key implicitly creates a key/value pair.
+
+cout << numberMap["xyzzy"] << endl;    //output 0
+Because "xyzzy" is not a key in the map, this implicitly creates a key/value pair with "xyzzy" as the key and zero as the value. 
+
+if you have a map<KeyType, ValueType>, then the iterator will dereference to a value of type pair<const KeyType, ValueType>, this is a pair of an immutable key and a mutable value.
+
+myMap.erase("key");
+.clear
+.size
+
+insert and How to Avoid It
+
+map<string, int> numberMap;
+numberMap.insert(make_pair("zero", 0));
+
+map<string, string> one;
+one["C++"] = "sad";
+one["C++"] = "happy";    ////overwrited, two["C++"] is "happy"
+/* Populate a map using insert */
+map<string, string> two;
+two.insert(make_pair("C++", "sad"));
+two.insert(make_pair("C++", "happy"));    //inset faild, two["C++"] is "sad"
+
+/* Try to insert normally. */
+pair<map<string, int>::iterator, bool> result = myMap.insert(make_pair("STL", 137));
+/* If insertion failed, manually set the value. */
+if(!result.second)
+    result.first->second = 137;
+
+Multicontainers
+The STL provides two special “multicontainer” classes, multimap and multiset, that act as maps and sets except that the values and keys they store are not necessarily unique. That is, a multiset could contain several copies of the same value, while a multimap might have duplicate keys associated with different values.
+
+the count function will return the number of copies of an element an a multicontainer, not just a binary zero or one. Also, while find will still return an iterator to an element if it exists, the element it points to is not guaranteed to be the only copy of that element in the multicontainer. Finally, the erase function will erase all copies of the specified key or element, not just the first it encounters.
+
+One important distinction between the multimap and regular map is the lack of square brackets. 
+
+equal_range returns a pair<iterator, iterator> that represents the span of entries equal to the specified value.
+
+/* Store the result of the equal_range */
+pair<multimap<string, int>::iterator, multimap<string, int>::iterator> myPair = myMultiMap.equal_range("STL");
+/* Iterate over it! */
+for(multimap<string, int>::iterator itr = myPair.first; itr != myPair.second; ++itr)
+    cout << itr->first << ": " << itr->second << endl;
+
+
+
+
+
+
+
+
+Chapter 5: STL Sequence Containers
+
+As mathematicians learned to lift theorems into their most general settings, so I wanted to lift algorithms and data structures. – Alex Stepanov, inventor of the STL. [Ste07]
+
+The Standard Template Library (STL) is a programmer's dream. It offers efficient ways to store, access, manipulate, and view data and is designed for maximum extensibility. 
+
+Overview of the STL
+The containers rely on the allocators for memory and produce iterators. Iterators can then be used in conjunction with the algorithms. Functors provide special functions for the algorithms, and adapters can produce functors, iterators, and containers. 
+
+Introducing the vector
+create and access a variable number of objects
+indexed
+store elements of any type
+every vector can only store one type of element
+vector<int> myVector;
+The type inside of the angle brackets is called a template argument
+#include <vector> 
+.push_back(val)
+
+size_t stands for “size type” cannot store negative values
+t is considered good programming practice to pass STL containers into functions by reference rather than by value, since this avoids an expensive copy.*
+
+An Alternative Implementation
+v.size()
+v.insert(v.begin() + n, e);
+
+Additional vector Operations
+One of the key distinctions between the vector and other data types we've seen so far is that the vector has a variable size.
+
+vector<int> myVector(15)； //“create a vector of integers called myVector that initially holds fifteen entries, all zero.”
+
+vector<double> myReals(20, 137.0);
+vector<string> myStrings(5, "(none)");
+
+An important detail is that this syntax is only legal when initially creating a vector.
+
+.resize()
+pop_back
+erase
+clear
+
+deque: A New Kind of Sequence
+manage a list of elements that will grow and shrink on both ends
+
+deque is a strange entity. It is pronounced “deck,” and is named as a contraction of “double-ended queue.”
+
+all operations supported by vector are also provided by deque. 
+
+push_front
+pop_front
+
+if deque has strictly more functionality than vector, why use vector? The main reason is speed. A vector stores its elements in contiguous memory addresses. deques, on the other hand, maintain a list of different “pages” that store information.
+
+In a vector, because all elements are stored in consecutive locations, it is possible to locate elements through simple arithmetic: to look up the nth element of a vector, find the address of the first element in the vector, then
+jump forward n positions. In a deque this lookup is more complex: the deque has to figure out which page the element will be stored in, then has to search that page for the proper item.
+
+However, inserting elements at the front of a vector requires the vector to shuffle all existing elements down to make room for the new element (slow), while doing the same in the deque only requires the deque to rearrange elements in a single page (fast).
+
+C++ ISO Standard (section 23.1.1.2): vector is the type of sequence that should be used by default... deque is the data structure of choice when most insertions and deletions take place at the beginning or at the end of the sequence.
+
+Extended Example: Snake
+
+
+More To Explore
+1. stack and queue: a container with a more restricted set of operations
+
+2. valarray: The valarray class is similar to a vector in that it's a managed array that can hold elements of any type. However, unlike vector, valarray is designed for numerical computations.
+
+
+
+
+Chapter 4: Multi-File Programs, Abstraction, and the Preprocessor
+
+The C++ Compilation Model  
+Preprocessing, in which code segments are spliced and inserted
+Compilation, in which code is converted to object code, and
+Linking, in which compiled code is joined together into a final executable.
+
+
+Modularity and Abstraction
+
+Behind the Curtain: The Preprocessor
+preprocessor: gives C++ programs access to their own source code at compile-time
+
+
+#include 
+These two different forms of #include instruct the preprocessor where to look for the specified file. If a filename is surrounded in angle brackets, the preprocessor searches for it a compiler-specific directory containing C++ standard library files. When filenames are in quotes, the preprocessor will look in the current directory
+
+C++ 库函数的位置： /usr/include/c++/
+
+#define
+#define phrase replacement
+
+include guard
+#ifndef
+#define
+#endif 
+
+macro:
+#define macroname(parameter1, parameter2, ... , parameterN) macro-body
+
+inline(内联)
+
+A #define Cautionary Tale（define 的替换能力使得代码可读性下降的例子）
+
+Advanced Preprocessor Techniques
+
+Special Preprocessor Values:  __DATE__,  __TIME__, __LINE__, __FILE__
+
+String Manipulation Functions: #, ##
+
+Advanced Preprocessor Techniques: The X Macro Trick( a way to specify data in one format but have it available in several formats )
+#define macroname(arguments) /* some use for the arguments */
+#include "filename"
+#undef macroname
+
+
+#undef
+
+Chapter 3: Streams
+C++'s streams library is the primary means by which a C++ program can interact with its environment, namely the user and the file system.
+
+A stream is a channel between a source and a destination which allows the source to push formatted data to the destination.
+
+cout (for character output)
+
+#include <iostream>
+
+<< operator is called the stream insertion operator
+
+endl stands for “end line”
+
+cin (character input)
+
+stream extraction operator >>
+
+
+Reading and Writing Files
+
+<fstream> (file stream) that exports the ifstream and ofstream types, streams that perform file I/O. 
+
+ofstream for output file stream
+
+
+Stream Manipulators
+
+endl 
+setw()
+setfill()
+boolalpha
+hex, dec, oct
+ws
+
+When Streams Go Bad
+
+.fail()
+
+A Useful Shorthand
+
+while(input >> intValue >> doubleValue) {
+/* ... process values here ... */
+}
+
+
+When Streams Do Too Much
+
+An Alternative: getline
+
+A String Buffer: stringstream <sstream>
+
+Putting it all together: Writing GetInteger
+
+
+
+Chapter 2: C++ without genlib.h
+
+
+using namespace std;
+
+
+Chapter 1: Getting Started
+
+
+
+
+
+Chapter 0: What is C++?
+
+C++ is a general purpose programming language with a bias towards systems programming that
+• is a better C.
+• supports data abstraction.
+• supports object-oriented programming.
+• supports generic programming
+– Bjarne Stroustrup, inventor of C++ [Str09.2]
+
+C++ is a General-Purpose Programming Language
+C++ is a Compiled Language
+C++ is a Statically-Typed Language
+C++ is a Multi-Paradigm Language
+C++ is a Mid-Level Language
+
+
+
+Accelerated C++: Practical Programming by Example by Andrew Koenig and Barbara Moo. This introductory C++ textbook is an invaluable resource for aspiring C++ programmers and is perhaps the best introductory C++ text available. While not an exhaustive reference, Accelerated C++ will quickly get you up to speed on professional-level C++ topics.
+
+Effective C++, More Effective C++, and Effective STL by Scott Meyers. These books are incredibly useful and will change the way you think and program in C++. The books in the Effective C++ series are collections of useful pieces of advice, so you can quickly navigate to relevant sections. While Meyers' books are targeted at audiences with a solid understanding of core C++ language features, they should still be quite useful in the second half of the course.
+
+The Design and Evolution of C++ by Bjarne Stroustrup. This most excellent book by the creator of C++ provides insight into the design decisions and overarching philosophy of C++. If you're interested in how the language came to be, this is the definitive resource.
+
+In addition to the above books, I strongly recommend picking up a C++ language and library reference book for use in this class. Stroustrup's The C++ Programming Language is an excellent choice.
+
+

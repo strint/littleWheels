@@ -1,0 +1,25 @@
+p1 content:hello template class
+p1 length:20
+p1 refCount:1
+p1 content address:00228F50
+p1 operator->():00228F50
+p1 operator*():hello template class
+
+p2 content:hello template class
+p1 refCount:2
+
+p3 content:hello template class 3
+p3 content:hello template class
+p1 refCount:3
+
+p1 content:new content
+p2 content:new content
+p3 content:new content
+p1 refCount:3
+
+p1 content:new content
+p2 content:new content
+p3 content:new pointer
+p1 refCount:2
+p3 refCount:1
+
