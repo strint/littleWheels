@@ -2,7 +2,7 @@
 #define SMARTPOINTER_H
 
 /***********************
- * Ò»¸öC++ÖÇÄÜÖ¸ÕëµÄÊµÏÖ *
+ * ä¸€ä¸ªC++æ™ºèƒ½æŒ‡é’ˆçš„å®ç° *
  ***********************/
 template <typename T> class SmartPointer
 {
@@ -35,7 +35,7 @@ private:
 };
 
 
-//Ä£°åÀàĞèÒªÊ¹ÓÃÄÚº¬µÄinclude·½Ê½£¬°ÑÊµÏÖºÍÔ­ĞÍ·ÅÔÚÒ»Æğ
+//æ¨¡æ¿ç±»éœ€è¦ä½¿ç”¨å†…å«çš„includeæ–¹å¼ï¼ŒæŠŠå®ç°å’ŒåŸå‹æ”¾åœ¨ä¸€èµ·
 template <typename T> SmartPointer<T>::SmartPointer(T* res) {
 	data = new Intermediary;
 	data->resource = res;
@@ -51,7 +51,7 @@ template <typename T> T& SmartPointer<T>::operator * () const {
 }
 
 template <typename T> T* SmartPointer<T>::operator -> () const {
-	return data->resource; //Ö¸ÏòTÀàĞÍÊı¾İµÄµØÖ·
+	return data->resource; //æŒ‡å‘Tç±»å‹æ•°æ®çš„åœ°å€
 }
 
 template <typename T> T* SmartPointer<T>::get() const {
@@ -64,7 +64,7 @@ template <typename T> size_t SmartPointer<T>::getShareCount() const {
 
 template <typename T> void SmartPointer<T>::detach() {
 	--data->refCount;
-    if(data->refCount == 0) {
+    	if(data->refCount == 0) {
 		delete data->resource;
 		delete data;
 	}
