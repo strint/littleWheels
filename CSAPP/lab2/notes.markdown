@@ -207,7 +207,7 @@ Dump of assembler code for function phase_3:
 0x401b90 <__dso_handle+648>:	0x0000000000400f55	0x0000000000400f5c
 ```
 ### Function
-function sscanf put return in eax
+function sscanf returns num of inputs to eax
 ### Input
 If you input tow numbers, the first num is in 0xC(%rsp), the second num is in 0x8(%rsp)
 
