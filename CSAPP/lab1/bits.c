@@ -191,7 +191,11 @@ int sign(int x) {
  *   Rating: 2
  */
 int getByte(int x, int n) {
-  return 2;
+  //n << 3 means n * 8, gets the bit to move left
+  //move the nth byte to the 0th byte
+  //& 255 mask out higher bytes
+  int z = (x >> (n << 3)) & 255;
+  return z;
 }
 // Rating: 3
 /* 
@@ -203,7 +207,12 @@ int getByte(int x, int n) {
  *   Rating: 3 
  */
 int logicalShift(int x, int n) {
-  return 2;
+  // x >> n : arithmetic shift
+  // & mask out high n bits
+  // (((~1 + 1) << (~n + 32)) << 1) is the ~ of mask, and it equals ((~1 + 1) << (32 + ~n + 1)), (~1 + 1) is -1(all 1), (32 + ~n +1) is (32 - n)
+  // ((~1 + 1) << (32 + ~n + 1)) is writted into (((~1 + 1) << (~n + 32)) << 1) becasue when n equals 32, ((~1 + 1) << (32 + ~n + 1)) return -1 but 0 (<< works from 0 to 31 but not 32)
+  int z = (x >> n) & (~(((~1 + 1) << (~n + 32)) << 1));
+  return z;
 }
 /* 
  * addOK - Determine if can compute x+y without overflow
@@ -214,7 +223,15 @@ int logicalShift(int x, int n) {
  *   Rating: 3
  */
 int addOK(int x, int y) {
-  return 2;
+  int sx = x >> 31; //sign of x
+  int sy = y >> 31; //sign of y
+  int sxpy = (x + y) >> 31; //sign of x + y
+  //two level
+  //level 1: x, y have same sign?
+  //level 2: x+y, x have same sign? 
+  //combine the 2 level and use the feature of the bits op result
+  int z = ~((sx ^ sy) | (~(sx ^ sxpy))) + 1;
+  return z;
 }
 // Rating: 4
 /* 
@@ -225,7 +242,14 @@ int addOK(int x, int y) {
  *   Rating: 4 
  */
 int bang(int x) {
-  return 2;
+  //op(x) := (~(x >> 31) + 1)
+  //if x is negative, op(x) is 1
+  //if x is positive, -x is negative, op(-x) is 1
+  //so if x is not 0, op(x) | op(-x) is 1
+  //if x is 0, op(x) | op(-x) is 0
+  //1 ^ 1 is 0, 0 ^ 0 is 1
+  int z = ((~(x >> 31) + 1) | (~((~x + 1) >> 31) + 1)) ^ 1;
+  return z;
 }
 // Extra Credit: Rating: 3
 /* 
