@@ -163,7 +163,15 @@ int thirdBits(void) {
  *   Rating: 2
  */
 int fitsBits(int x, int n) {
-  return 2;
+  //when n == 3
+  //valid positive x: 0 ~ 3, can be check by !(x >> 2)
+  //valid negative x: -1 ~ -4, negate and substract 1, gets range: 0 ~ 3, same as positive
+  //so valid negative can be check by !((~x + 1 + (-1)) >> 2)
+  //then using sign to combine the two condition
+  int ns = !(x >> 31);
+  int l = n + (~1 + 1);
+  int z = ((!(x >> l)) & ns) | ((!((~x) >> l)) & !ns);
+  return z;
 }
 /* 
  * sign - return 1 if positive, 0 if zero, and -1 if negative
@@ -260,7 +268,10 @@ int bang(int x) {
  *   Rating: 3
  */
 int conditional(int x, int y, int z) {
-  return 2;
+  int n = ~(!x) + 1;
+  int j = (y & (~n)) | (z & n);
+
+  return j; 
 }
 // Extra Credit: Rating: 4
 /*
@@ -272,5 +283,11 @@ int conditional(int x, int y, int z) {
  *   Rating: 4
  */
 int isPower2(int x) {
-  return 2;
+  //when x is power of 2, x & (x - 1) is 0, when x is not power of 2, x & (x -1) is not 0
+  int p = !(x & (x + ~0));
+  //make sure x is not 0
+  int nz = !(!x);
+  //make sure x is not negative
+  int nn = !(x >> 31);
+  return (p & nz & nn);
 }
