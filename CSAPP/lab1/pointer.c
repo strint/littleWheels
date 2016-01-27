@@ -85,8 +85,12 @@ int intSize() {
   int * intPtr1;
   int * intPtr2;
   // TODO: Write code to compute size of an integer.
+  char * charPtr1;
+  char * charPtr2;
+  charPtr1 = (char *) &intArray[0];
+  charPtr2 = (char *) &intArray[1];
 
-  return 2;
+  return charPtr2 - charPtr1;
 }
 
 /*
@@ -97,8 +101,12 @@ int doubleSize() {
   double * doubPtr1;
   double * doubPtr2;
   // TODO: Write code to compute size of a double.
+  char * charPtr1;
+  char * charPtr2;
+  charPtr1 = (char *) &doubArray[0];
+  charPtr2 = (char *) &doubArray[1];
 
-  return 2;
+  return charPtr2 - charPtr1;
 }
 
 /*
@@ -109,8 +117,12 @@ int pointerSize() {
   double ** ptrPtr1;
   double ** ptrPtr2;
   // TODO: Write code to compute size of a pointer.
+  char * charPtr1;
+  char * charPtr2;
+  charPtr1 = (char *) &ptrArray[0];
+  charPtr2 = (char *) &ptrArray[1];
 
-  return 2;
+  return charPtr2 - charPtr1;
 }
 
 /*
@@ -123,6 +135,7 @@ int changeValue() {
   int * intPtr2;
   // TODO: Write code to change value of intArray[5] to 351 using only
   //       intPtr1 and the + operator.
+  *(intPtr1 + 5) = 351;
 
   return intArray[5];
 }
@@ -136,7 +149,16 @@ int changeValue() {
  */
 int withinSameBlock(int * ptr1, int * ptr2) {
   // TODO
-  return 2;
+  int p1 = (int) ptr1;
+  int p2 = (int) ptr2;
+  
+  //if withinSameBlock, then they have same upper address
+  int mask = ~63;
+  p1 = p1 & mask;
+  p2 = p2 & mask;
+
+  if(p1 == p2) return 1;
+  else return 0;
 }
 
 /*
@@ -145,7 +167,10 @@ int withinSameBlock(int * ptr1, int * ptr2) {
  */
 int withinArray(int * intArray, int size, int * ptr) {
   // TODO
-  return 2;
+  int * startP = intArray;
+  int * endP = intArray + (size - 1);
+  if((ptr >= startP) && (ptr <= endP)) return 1;
+  else return 0; 
 }
 /*
  * Return x with the n bits that begin at position p inverted (i.e.,
@@ -154,5 +179,12 @@ int withinArray(int * intArray, int size, int * ptr) {
  */
 int invert(int x, int p, int n) {
   // TODO
-  return 2;
+  // construct mask on inverted bits
+  int mask = ((1 << n) - 1) << p;
+  // get wanted bits and invert them 
+  int iv = (~(x & mask)) & mask;
+  // get the not inverted bits
+  int riv = x & (~mask);
+
+  return iv + riv;
 }
