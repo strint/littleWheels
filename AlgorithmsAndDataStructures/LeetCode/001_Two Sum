@@ -1,0 +1,26 @@
+# Problem
+Two Sum，数组中是否存在两个数，这个两个数的和为某个特定值。
+
+# Solution
+```
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        vector<int> result;
+        map<int, int> exist;
+        for(int i = 0; i < nums.size(); ++i) {
+            exist[nums.at(i)] = i + 1;
+        }
+        for(int j = 0; j < nums.size(); ++j) {
+            int want = target - nums.at(j);
+            if(exist[want] && j + 1 != exist[want]) {
+                result.push_back(j + 1);
+                result.push_back(exist[want]);
+                return result;
+            }
+        }
+    }
+};
+```
+
+# Notes
