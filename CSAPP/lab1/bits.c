@@ -122,6 +122,8 @@ NOTES:
 int bitAnd(int x, int y) {
   int z = ~((~x)|(~y));
   return z;
+  //按位运算，列出真值表，进行拼凑
+  //具体这里是德摩根律，析取的否定
 }
 /* 
  * bitXor - x^y using only ~ and & 
@@ -131,6 +133,7 @@ int bitAnd(int x, int y) {
  *   Rating: 1
  */
 int bitXor(int x, int y) {
+  //根据真值表和与或非特点进行拼接
   int z = (~(x & y))&(~((~x) & (~y)));
   return z;
 }
@@ -142,12 +145,21 @@ int bitXor(int x, int y) {
  *   Rating: 1
  */
 int thirdBits(void) {
+  // x = 0000 0000 0100 1001
   int x = 73;
-  x = x <<  8;
+  // x = 0100 1001 0000 0000
+  x = x << 8;
+  // x += 0000 0000 0010 0000
+  // x = 0100 1001 0010 0000
   x = x + 36;
+  // x = 0010 0000 0000 0000
   x = x << 8;
+  // x += 0000 0000 1001 0010
+  // x = 0010 0000 1001 0010
   x = x + 146;
+  // x = 1001 0010 0000 0000
   x = x << 8;
+  // x = 1001 0010 0100 1001
   x = x + 73;
  
   return x;
