@@ -125,7 +125,7 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 62. In computing, invariants are ephemeral.
 
-63. **When we write programs that "learn", it turns out that we do and they don't.**
+63. **When we write programs that "learn", it turns out that we do and they don't.当我们写能够学习的程序时，我们学到了很多，程序什么也没学到。**
 
 64. Often it is the means that justify the ends: Goals advance technique and technique survives even when goal structures crumble.
 
@@ -157,17 +157,17 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 78. If your computer speaks English, it was probably made in Japan.
 
-79. **A year spent in artificial intelligence is enough to make one believe in God.**
+79. **A year spent in artificial intelligence is enough to make one believe in God.在人工智能领域待上一年，就足够让人开始相信上帝的存在了。**
 
 80. Prolonged contact with the computer turns mathematicians into clerks and vice versa.
 
-81. **In computing, turning the obvious into the useful is a living definition of the word "frustration".**
+81. **In computing, turning the obvious into the useful is a living definition of the word "frustration".在计算机领域，把“明显的东西”变成“能用的东西”的过程，简直是对“挫折”最生动的定义。**
 
 82. We are on the verge: Today our program proved Fermat's next-to-last theorem.
 
 83. What is the difference between a Turing machine and the modern computer? It's the same as that between Hillary's ascent of Everest and the establishment of a Hilton hotel on its peak.
 
-84. **Motto for a research laboratory: What we work on today, others will first think of tomorrow.**
+84. **Motto for a research laboratory: What we work on today, others will first think of tomorrow.适合研究型实验室的格言：我们今天做的东西，其他人明天才能第一次想到。**
 
 85. Though the Chinese should adore APL, it's FORTRAN they put their money on.
 
