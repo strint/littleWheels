@@ -1,4 +1,5 @@
-## EPIGRAMS IN PROGRAMMING 编程论语 By [Alan J. Perlis，1966年图灵奖](https://en.wikipedia.org/wiki/Alan_Perlis)
+## EPIGRAMS IN PROGRAMMING 编程论语
+By [Alan J. Perlis，1966年图灵奖](https://en.wikipedia.org/wiki/Alan_Perlis)
 
 1. One man's constant is another man's variable. 一个人的常量是另一个人的变量。
 
@@ -10,11 +11,11 @@
 
 5. If a program manipulates a large amount of data, it does so in a small number of ways.
 
-6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere.具有对称性意味着可以降低复杂度（协同的程序包含潜在的共同子程序），要尝试在每个地方寻找这种对称性。（抽象出共同的东西）
+6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere. 具有对称性意味着可以降低复杂度（协作的程序可能包含潜在的共同子程序）；要尝试在每个地方寻找这种对称性。（抽象出共同的东西）
 
 7. It is easier to write an incorrect program than understand a correct one.写一个错误的程序比看懂一个正确的程序要容易。
 
-8. A programming language is low level when its programs require attention to the irrelevant.
+8. A programming language is low level when its programs require attention to the irrelevant. 用一个语言写程序时，我们说这个编程语言比较接近底层，往往是因为这个语言需要过多地关注无关的事物。
 
 9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
 
