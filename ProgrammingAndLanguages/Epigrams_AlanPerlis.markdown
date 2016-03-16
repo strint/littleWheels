@@ -11,7 +11,7 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 5. If a program manipulates a large amount of data, it does so in a small number of ways.
 
-6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere. 具有对称性意味着可以降低复杂度（协作的程序可能包含潜在的共同子程序）；要尝试在每个地方寻找这种对称性。（抽象出共同的东西）
+6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere. 具有对称性意味着可以降低复杂度（协作的程序可能包含潜在的共同子程序）；要尝试在每个地方寻找这种对称性。
 
 7. It is easier to write an incorrect program than understand a correct one.写一个错误的程序比看懂一个正确的程序要容易。
 
@@ -23,7 +23,7 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 11. If you have a procedure with ten parameters, you probably missed some.
 
-12. **Recursion is the root of computation since it trades description for time.**
+12. **Recursion is the root of computation since it trades description for time.递归体现了计算的本质：用描述来换取时间。**
 
 13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
 
