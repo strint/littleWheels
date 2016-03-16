@@ -61,7 +61,7 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 30. **In programming, everything we do is a special case of something more general -- and often we know it too quickly.**
 
-31. **Simplicity does not precede complexity, but follows it.程序先体现出复杂性，然后才体现出简洁性。**
+31. **Simplicity does not precede complexity, but follows it.程序的过程中，先体现出复杂性，然后才体现出简洁性。**
 
 32. Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.
 
@@ -85,7 +85,7 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 42. You can measure a programmer's perspective by noting his attitude on the continuing vitality of FORTRAN.
 
-43. **In software systems, it is often the early bird that makes the worm.**
+43. **In software systems, it is often the early bird that makes the worm.在软件开发中，往往是早起的鸟儿制造了虫子。**
 
 44. Sometimes I think the only universal in the computing field is the fetch-execute cycle.
 
