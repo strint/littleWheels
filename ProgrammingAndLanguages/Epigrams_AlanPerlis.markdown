@@ -61,7 +61,7 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 30. **In programming, everything we do is a special case of something more general -- and often we know it too quickly.**
 
-31. **Simplicity does not precede complexity, but follows it.程序的过程中，先体现出复杂性，然后才体现出简洁性。**
+31. **Simplicity does not precede complexity, but follows it.程序的开发的过程中，先体现出复杂性，然后才体现出简洁性。**
 
 32. Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.
 
@@ -109,13 +109,13 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 54. Beware of the Turing tar-pit in which everything is possible but nothing of interest is easy.
 
-55. **A LISP programmer knows the value of everything, but the cost of nothing.**
+55. **A LISP programmer knows the value of everything, but the cost of nothing.一个Lisp程序员知道程序中所有东西的值，但是不知道这些东西的代价。**
 
 56. Software is under a constant tension. Being symbolic it is arbitrarily perfectible; but also it is arbitrarily changeable.
 
 57. It is easier to change the specification to fit the program than vice versa.
 
-58. **Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.**
+58. **Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.对于问题的复杂性，傻瓜程序员没有意识到它，功利的程序员深陷于它，有些程序员试图规避它，天才的程序员消灭掉它。**
 
 59. In English every word can be verbed. Would that it were so in our programming languages.
 
