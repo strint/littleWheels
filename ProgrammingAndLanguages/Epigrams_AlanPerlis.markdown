@@ -39,13 +39,13 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 19. **A language that doesn't affect the way you think about programming, is not worth knowing.**
 
-20. **Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.**
+20. **Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.模块化的地方就是误解产生的地方；信息隐藏的代价是需要检查通信的正确性。**
 
 21. Optimization hinders evolution.
 
 22. A good system can't have a weak command language.
 
-23. **To understand a program you must become both the machine and the program.**
+23. **To understand a program you must become both the machine and the program.为了理解程序，你既要变成程序，又要变成机器。**
 
 24. Perhaps if we wrote programs from childhood on, as adults we'd be able to read them.
 
