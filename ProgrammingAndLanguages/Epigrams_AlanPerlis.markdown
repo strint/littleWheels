@@ -23,7 +23,7 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 11. If you have a procedure with ten parameters, you probably missed some.
 
-12. **Recursion is the root of computation since it trades description for time.递归体现了计算的本质：用描述来换取时间。**
+12. **Recursion is the root of computation since it trades description for time.递归体现了计算的本质：用（精巧的）描述来换取时间（的节约）。**
 
 13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
 
@@ -33,7 +33,7 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 16. Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
 
-17. **If a listener nods his head when you're explaining your program, wake him up.**
+17. **If a listener nods his head when you're explaining your program, wake him up.你给一个人讲解你写的程序时，如果他频频点头，请把他叫醒。**
 
 18. A program without a loop and a structured variable isn't worth writing.
 
