@@ -1,6 +1,7 @@
-# EPIGRAMS IN PROGRAMMING By [Alan J. Perlis，1966年图灵奖](https://en.wikipedia.org/wiki/Alan_Perlis)
+## EPIGRAMS IN PROGRAMMING 编程论语 By [Alan J. Perlis，1966年图灵奖](https://en.wikipedia.org/wiki/Alan_Perlis)
 
-1. One man's constant is another man's variable.一个人的常量是另一个人的变量。
+* 1. One man's constant is another man's variable.
+ * 一个人的常量是另一个人的变量。
 
 2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
 
