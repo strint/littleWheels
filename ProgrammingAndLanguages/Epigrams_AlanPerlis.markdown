@@ -1,5 +1,5 @@
 ## EPIGRAMS IN PROGRAMMING 编程论语
-By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wiki/Alan_Perlis)
+> 作者： [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wiki/Alan_Perlis)
 
 1. One man's constant is another man's variable. 一个人的常量是另一个人的变量。
 
@@ -185,15 +185,15 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 92. The computer is the ultimate polluter: its feces are indistinguish- able from the food it produces.
 
-93. **When someone says "I want a programming language in which I need only say what I wish done," give him a lollipop.**
+93. **When someone says "I want a programming language in which I need only say what I wish done," give him a lollipop.如果遇到这么一个人，他说他想要一个编程语言：只要告诉编程语言他想要什么，编程语言就帮你实现了，请给他一个棒棒糖。**
 
 94. Interfaces keep things tidy, but don't accelerate growth: Functions do.
 
-95. **Don't have good ideas if you aren't willing to be responsible for them.**
+95. **Don't have good ideas if you aren't willing to be responsible for them.不要说你拥有一个好想法，除非你准备它负责。**
 
 96. Computers don't introduce order anywhere as much as they expose opportunities.
 
-97. **When a professor insists computer science is X but not Y, have compassion for his graduate students.**
+97. When a professor insists computer science is X but not Y, have compassion for his graduate students.
 
 98. In computing, the mean time to failure keeps getting shorter.
 
@@ -201,7 +201,7 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 100. We will never run out of things to program as long as there is a single program around.
 
-101. **Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve.**
+101. **Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve.处理失败的方法很简单：努力工作去继续提高。处理成功的方法也很简单：你可能选错了问题，努力工作去继续提高。（意思是你已经成功解决的问题其实不是你应该做的问题么？！）**
 
 102. One can't proceed from the informal to the formal by formal means.
 
@@ -209,7 +209,7 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 104. The proof of a system's value is its existence.
 
-105. **You can't communicate complexity, only an awareness of it.**
+105. **You can't communicate complexity, only an awareness of it.你没法精确描述复杂性，只是知道它的存在。**
 
 106. It's difficult to extract sense from strings, but they're the only communication coin we can count on.
 
@@ -223,15 +223,15 @@ By [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wi
 
 111. Why did the Roman Empire collapse? What is Latin for office automation?
 
-112. **Computer Science is embarrassed by the computer.**
+112. **Computer Science is embarrassed by the computer.计算机科学因为计算机而感到难为情。**
 
-113. **The only constructive theory connecting neuroscience and psychology will arise from the study of software.**
+113. **The only constructive theory connecting neuroscience and psychology will arise from the study of software.想要联系心理学和神经科学，唯一有建设性的理论将会来自对软件的研究。**
 
-114. **Within a computer natural language is unnatural.**
+114. **Within a computer natural language is unnatural.对于计算机来说，自然语言是不自然的。**
 
-115. **Most people find the concept of programming obvious, but the doing impossible.**
+115. **Most people find the concept of programming obvious, but the doing impossible.大部分人觉得编程的概念是显而易见的，结果发现动起手来却很困难。**
 
-116. **You think you know when you can learn, are more sure when you can write, even more when you can teach, but certain when you can program.**
+116. **You think you know when you can learn, are more sure when you can write, even more when you can teach, but certain when you can program.对于一个事物，你学了一下会觉得懂了，写下来之后会觉得又懂了一点，教给别人后会觉得更懂了，但是能写出程序后才会确定自己懂了。**
 
 117. **It goes against the grain of modern education to teach children to program. What fun is there in making plans, acquiring discipline in organizing thoughts, devoting attention to detail and learning to be self-critical?**
 
