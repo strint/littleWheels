@@ -1,18 +1,18 @@
-# EPIGRAMS IN PROGRAMMING
+# EPIGRAMS IN PROGRAMMING By [Alan J. Perlis，1966年图灵奖](https://en.wikipedia.org/wiki/Alan_Perlis)
 
-1. One man's constant is another man's variable.
+1. One man's constant is another man's variable.一个人的常量是另一个人的变量。
 
 2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
 
-3. **Syntactic sugar causes cancer of the semicolon.**
+3. **Syntactic sugar causes cancer of the semicolon.**（在函数式程序中，）语法糖会导致分号的癌症。
 
 4. Every program is a part of some other program and rarely fits.
 
 5. If a program manipulates a large amount of data, it does so in a small number of ways.
 
-6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere.
+6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere.具有对称性意味着可以降低复杂度（协同的程序包含潜在的共同子程序），要尝试在每个地方寻找这种对称性。（抽象出共同的东西）
 
-7. It is easier to write an incorrect program than understand a correct one.
+7. It is easier to write an incorrect program than understand a correct one.写一个错误的程序比看懂一个正确的程序要容易。
 
 8. A programming language is low level when its programs require attention to the irrelevant.
 
