@@ -3,13 +3,13 @@
 
 1. One man's constant is another man's variable. 一个人的常量是另一个人的变量。
 
-2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.
+2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.函数推迟了绑定，数据结构引发了绑定。寓意：编程时晚点引入结构化的数据 。
 
-3. **Syntactic sugar causes cancer of the semicolon.**（在函数式程序中，）语法糖会导致分号的癌症。
+3. Syntactic sugar causes cancer of the semicolon.（在函数式程序中，）语法糖会导致分号的癌症。
 
-4. Every program is a part of some other program and rarely fits.
+4. Every program is a part of some other program and rarely fits.每个程序（从功能上讲）都可以作为其它程序的一部分，但是（从接口上讲）却难以组合到其它程序中。
 
-5. If a program manipulates a large amount of data, it does so in a small number of ways.
+5. If a program manipulates a large amount of data, it does so in a small number of ways.如果一个程序要处理某种数据，在数据很少时，程序中包含了几种方法；当数据很大时，程序中包含的方法还是这么多。
 
 6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere. 具有对称性意味着可以降低复杂度（协作的程序可能包含潜在的共同子程序）；要尝试在每个地方寻找这种对称性。
 
@@ -17,11 +17,11 @@
 
 8. A programming language is low level when its programs require attention to the irrelevant. 用一个语言写程序时，我们说这个编程语言比较接近底层，往往是因为这个语言需要过多地关注无关的事物。
 
-9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.写一个程序，使用10个函数、10种数据结构，不如使用100个函数、一种数据结构。
 
 10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.
 
-11. If you have a procedure with ten parameters, you probably missed some.
+11. If you have a procedure with ten parameters, you probably missed some.如果你设计了一个带有10个参数的函数，那么你可能还是忘记了某些要加的参数。
 
 12. **Recursion is the root of computation since it trades description for time.递归体现了计算的本质：用（精巧的）描述来换取时间（的节约）。**
 
