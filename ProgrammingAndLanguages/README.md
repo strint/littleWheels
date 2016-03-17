@@ -11,3 +11,7 @@
 ## Scheme
 * [函数式语言](https://github.com/strint/sicpAns)
 * [SICP《计算机程序的构造和解释》](https://github.com/strint/sicpAns)
+
+## Prolog
+* 逻辑编程
+* 事实 + 推理规则
