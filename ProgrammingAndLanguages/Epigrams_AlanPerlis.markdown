@@ -13,7 +13,7 @@
 
 6. Symmetry is a complexity-reducing concept (co-routines include subroutines); seek it everywhere. 具有对称性意味着可以降低复杂度（协作的程序可能包含潜在的共同子程序）；要尝试在每个地方寻找这种对称性。
 
-7. It is easier to write an incorrect program than understand a correct one.写一个错误的程序比看懂一个正确的程序要容易。
+7. It is easier to write an incorrect program than understand a correct one.看懂一个正确的程序比写一个错误的程序要难。
 
 8. A programming language is low level when its programs require attention to the irrelevant. 用一个语言写程序时，我们说这个编程语言比较接近底层，往往是因为这个语言需要过多地关注无关的事物。
 
@@ -33,7 +33,7 @@
 
 16. Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
 
-17. **If a listener nods his head when you're explaining your program, wake him up.你给一个人讲解你写的程序时，如果他频频点头，请把他叫醒。**
+17. **If a listener nods his head when you're explaining your program, wake him up.给一个人讲解你写的程序时，如果他频频点头，请把他叫醒。**
 
 18. A program without a loop and a structured variable isn't worth writing.
 
@@ -115,7 +115,7 @@
 
 57. It is easier to change the specification to fit the program than vice versa.
 
-58. **Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.对于问题的复杂性，傻瓜程序员没有意识到它，功利的程序员深陷于它，有些程序员试图规避它，天才的程序员消灭掉它。**
+58. **Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.对于问题的复杂性，傻瓜程序员没有意识到它，功利的程序员深陷于它，有些程序员试图规避它，天才的程序员消灭它。**
 
 59. In English every word can be verbed. Would that it were so in our programming languages.
 
@@ -125,7 +125,7 @@
 
 62. In computing, invariants are ephemeral.
 
-63. **When we write programs that "learn", it turns out that we do and they don't.当我们写能够学习的程序时，我们学到了很多，程序什么也没学到。**
+63. **When we write programs that "learn", it turns out that we do and they don't.当我们写能够学习的程序时，我们学到了很多，但程序什么也没学到。**
 
 64. Often it is the means that justify the ends: Goals advance technique and technique survives even when goal structures crumble.
 
@@ -161,7 +161,7 @@
 
 80. Prolonged contact with the computer turns mathematicians into clerks and vice versa.
 
-81. **In computing, turning the obvious into the useful is a living definition of the word "frustration".在计算机领域，把“明显的东西”变成“能用的东西”的过程，简直是对“挫折”最生动的定义。**
+81. **In computing, turning the obvious into the useful is a living definition of the word "frustration".在计算机领域，把“显而易见的东西”变成“能用的东西”的过程，简直是对“挫折”最生动的定义。**
 
 82. We are on the verge: Today our program proved Fermat's next-to-last theorem.
 
@@ -185,11 +185,11 @@
 
 92. The computer is the ultimate polluter: its feces are indistinguish- able from the food it produces.
 
-93. **When someone says "I want a programming language in which I need only say what I wish done," give him a lollipop.如果遇到这么一个人，他说他想要一个编程语言：只要告诉编程语言他想要什么，编程语言就帮你实现了，请给他一个棒棒糖。**
+93. **When someone says "I want a programming language in which I need only say what I wish done," give him a lollipop.一个人说他想要一个编程语言：“只要告诉编程语言你想要什么，编程语言就帮你实现了”。如果你遇到这么一个人，请给他一个棒棒糖。**
 
 94. Interfaces keep things tidy, but don't accelerate growth: Functions do.
 
-95. **Don't have good ideas if you aren't willing to be responsible for them.不要说你拥有一个好想法，除非你准备它负责。**
+95. **Don't have good ideas if you aren't willing to be responsible for them.不要说你拥有一个好想法，除非你准备对它负责。**
 
 96. Computers don't introduce order anywhere as much as they expose opportunities.
 
