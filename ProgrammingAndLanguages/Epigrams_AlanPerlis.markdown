@@ -3,7 +3,7 @@
 
 1. One man's constant is another man's variable. 一个人的常量是另一个人的变量。
 
-2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.函数推迟了绑定，数据结构引发了绑定。寓意：编程时晚点引入结构化的数据 。
+2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.函数推迟了绑定，数据结构引发了绑定。寓意：编程时先考虑函数后考虑数据结构。
 
 3. Syntactic sugar causes cancer of the semicolon.（在函数式程序中，）语法糖会导致分号的癌症。
 
@@ -19,7 +19,7 @@
 
 9. It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.写一个程序，使用10个函数、10种数据结构，不如使用100个函数、一种数据结构。
 
-10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.
+10. Get into a rut early: Do the same process the same way. Accumulate idioms. Standardize. The only difference(!) between Shakespeare and you was the size of his idiom list - not the size of his vocabulary.早点进入轨道：同样的东西用同样的处理方式。积累习语。标准化。你和撒士比亚唯一的区别不是词汇量的差别，而是习语的差别。
 
 11. If you have a procedure with ten parameters, you probably missed some.如果你设计了一个带有10个参数的函数，那么你可能还是忘记了某些要加的参数。
 
