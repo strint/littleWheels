@@ -27,27 +27,27 @@
 
 13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
 
-14. In the long run every program becomes rococo - then rubble.
+14. In the long run every program becomes rococo - then rubble.长期地来讲，任何代码都会过时，最终被废弃。
 
-15. Everything should be built top-down, except the first time.
+15. Everything should be built top-down, except the first time.所有的系统都应该采用自顶向下的方式来开发，只有那些之前没有被开发过的系统是例外。
 
-16. Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
+16. Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.所有程序的诞生都至少有两个原因：一个原因是它需要被用来解决某个问题，另一个原因是因为某种问题它还没被人写过。
 
 17. **If a listener nods his head when you're explaining your program, wake him up.给一个人讲解你写的程序时，如果他频频点头，请把他叫醒。**
 
-18. A program without a loop and a structured variable isn't worth writing.
+18. A program without a loop and a structured variable isn't worth writing.一个没有循环、没有复合数据结构的程序时不值得写的。
 
-19. **A language that doesn't affect the way you think about programming, is not worth knowing.**
+19. A language that doesn't affect the way you think about programming, is not worth knowing.
 
 20. **Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.模块化的地方就是误解产生的地方；信息隐藏的代价是需要检查通信的正确性。**
 
-21. Optimization hinders evolution.
+21. Optimization hinders evolution.优化阻碍了进化。
 
-22. A good system can't have a weak command language.
+22. A good system can't have a weak command language.命令行不好的系统不是好系统。
 
 23. **To understand a program you must become both the machine and the program.为了理解程序，你既要变成程序，又要变成机器。**
 
-24. Perhaps if we wrote programs from childhood on, as adults we'd be able to read them.
+24. Perhaps if we wrote programs from childhood on, as adults we'd be able to read them.如果我们从小时候就开始写程序的话...那么成年了我们应该就看不懂那时写的代码了。
 
 25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.
 
