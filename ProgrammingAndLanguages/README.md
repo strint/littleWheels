@@ -15,3 +15,4 @@
 ## Prolog
 * 逻辑编程
 * 事实 + 推理规则
+* 一个不错的简介：https://bernardopires.com/2013/10/try-logic-programming-a-gentle-introduction-to-prolog/
