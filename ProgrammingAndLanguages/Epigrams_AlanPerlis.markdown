@@ -201,7 +201,7 @@
 
 100. We will never run out of things to program as long as there is a single program around.
 
-101. **Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve.处理失败的方法很简单：努力工作去继续提高。处理成功的方法也很简单：你可能选错了问题，努力工作去继续提高。（意思是你已经成功解决的问题其实不是你应该做的问题么？！）**
+101. **Dealing with failure is easy: Work hard to improve. Success is also easy to handle: You've solved the wrong problem. Work hard to improve.处理失败的方法很简单：努力工作去继续提高。处理成功的方法也很简单：你可能选错了问题，努力工作去选择新的问题。（意思是你已经成功解决的问题其实不是你应该做的问题么？！）**
 
 102. One can't proceed from the informal to the formal by formal means.
 
