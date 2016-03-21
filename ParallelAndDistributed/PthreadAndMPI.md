@@ -11,30 +11,30 @@
  * pthread_mutex_unlock() //释放锁
 
 * 信号量 
- * sem_init()
+ * sem_init() //初始化，设定信号量的数量
  * sem_destory()
  * sem_wait() //获得一个信号量
  * sem_post() //释放一个信号量
 
  
 * 条件变量
- * pthread_cond_init()
+ * pthread_cond_init() 
  * pthread_cond_destory()
  * pthread_cond_signal()
  * pthread_cond_broadcast()
- * pthread_cond_wait()
+ * pthread_cond_wait() 
  
 * 路障
- * pthread_barrier_init()
+ * pthread_barrier_init() //初始化时，设定一个的数量
  * pthread_barrier_destory()
- * pthread_barrier_wait()
+ * pthread_barrier_wait() //路障，当到达路障的线程的数量达到设定数量后，通过路障，否则等待
 
 * 读写锁
  * pthread_rwlock_init()
  * pthread_rwlock_destory()
- * pthread_rwlock_rdloock()
- * pthread_rwlock_wrlock()
- * pthread_rwlock_unlock()
+ * pthread_rwlock_rdloock() //获得一个读锁，其它线程还可以获得读锁，但是不可以获得写锁
+ * pthread_rwlock_wrlock() //获得一个写锁，其它线程既不能获得读锁，也不能获得写锁
+ * pthread_rwlock_unlock() //释放锁
 
 ## MPI
 分布式内存，主要解决通信问题
