@@ -17,12 +17,13 @@
  * sem_post() //释放一个信号量
 
  
-* 条件变量（需要和互斥量配合使用）
+* 条件变量
  * pthread_cond_init() 
  * pthread_cond_destory()
  * pthread_cond_wait() //等待一个条件变量
  * pthread_cond_signal() //释放一个等待条件变量的线程
  * pthread_cond_broadcast() //释放所有等待条件变量的线程
+ * 需要和互斥量配合使用，这个互斥量用来对条件进行同步，即修改条件时要加锁
 
  
 * 路障
