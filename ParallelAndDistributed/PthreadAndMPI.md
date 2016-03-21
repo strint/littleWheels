@@ -65,3 +65,7 @@
  * GET_TIME() in time.h
  * MPI_Wtime()
 
+* 数据划分
+ * 块划分
+ * 循环划分
+ * 块-循环划分
