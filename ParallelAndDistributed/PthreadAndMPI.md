@@ -1,4 +1,5 @@
 ## Pthread
+共享内存，主要解决同步问题
 * 线程
  * pthread_create()
  * pthread_jion()
@@ -29,5 +30,14 @@
  * unlock()
 
 ## MPI
+分布式内存，主要解决通信问题
 * 初始化
- * 
+ * MPI_Init()
+ * MPI_Finalize()
+ * MPI_Comm_size()
+ * MPI_Comm_rank()
+
+* 点对点通信
+  * MPI_Send()
+  * MPI_Recv()
+
