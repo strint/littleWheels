@@ -17,12 +17,13 @@
  * sem_post() //释放一个信号量
 
  
-* 条件变量
+* 条件变量（需要和互斥量配合使用）
  * pthread_cond_init() 
  * pthread_cond_destory()
- * pthread_cond_signal()
- * pthread_cond_broadcast()
- * pthread_cond_wait() 
+ * pthread_cond_wait() //等待一个条件变量
+ * pthread_cond_signal() //释放一个等待条件变量的线程
+ * pthread_cond_broadcast() //释放所有等待条件变量的线程
+
  
 * 路障
  * pthread_barrier_init() //初始化时，设定一个的数量
@@ -45,8 +46,8 @@
  * MPI_Comm_rank() //进程的编号
 
 * 点对点通信
-  * MPI_Send() //阻塞的或者缓冲的，发送
-  * MPI_Recv() //阻塞的，接收
+  * MPI_Send() //发送，阻塞的或者缓冲的
+  * MPI_Recv() //接收，阻塞的
  
 * 集合通信
  * MPI_Bcast() //广播（不分块），一到多，一种数据发到多个进程
