@@ -1,33 +1,40 @@
 ## Pthread
 共享内存，主要解决同步问题
 * 线程
- * pthread_create()
- * pthread_jion()
+ * pthread_create() //创建线程
+ * pthread_jion() //结束线程
 
 * 互斥量
  * pthread_mutex_init()
- * _destory()
- * _post()
- * _wait()
+ * pthread_mutex_destory()
+ * pthread_mutex_lock() //获得锁
+ * pthread_mutex_unlock() //释放锁
+
+* 信号量 
+ * sem_init()
+ * sem_destory()
+ * sem_wait() //获得一个信号量
+ * sem_post() //释放一个信号量
+
  
 * 条件变量
  * pthread_cond_init()
- * _destory()
- * _signal()
- * _broadcast()
- * _wait()
+ * pthread_cond_destory()
+ * pthread_cond_signal()
+ * pthread_cond_broadcast()
+ * pthread_cond_wait()
  
 * 路障
  * pthread_barrier_init()
- * _destory()
- * _wait()
+ * pthread_barrier_destory()
+ * pthread_barrier_wait()
 
 * 读写锁
  * pthread_rwlock_init()
- * _destory()
- * rdloock()
- * wrlock()
- * unlock()
+ * pthread_rwlock_destory()
+ * pthread_rwlock_rdloock()
+ * pthread_rwlock_wrlock()
+ * pthread_rwlock_unlock()
 
 ## MPI
 分布式内存，主要解决通信问题
