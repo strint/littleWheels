@@ -3,7 +3,8 @@
 # Analysis
 
 # Solution
-```
+```cpp
+
 ```
 
 # Notes
