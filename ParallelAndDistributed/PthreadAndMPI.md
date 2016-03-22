@@ -72,6 +72,8 @@
 
 
 ## 例子
+https://computing.llnl.gov/tutorials/pthreads/samples/mpithreads_both.c
+
 ```cpp
 /*****************************************************************************
 * FILE: mpithreads_both.c
@@ -95,8 +97,8 @@
 * SOURCE: Vijay Sonnad, IBM
 * LAST REVISED:  01/29/09 Blaise Barney
 ******************************************************************************/
-#include "mpi.h" 
-#include <pthread.h>
+#include "mpi.h" //MPI头文件
+#include <pthread.h> //pthread头文件
 #include <stdio.h>
 #include <stdlib.h>
  
@@ -107,20 +109,20 @@ to include the number of threads per node.
  
 typedef struct
  {
-   double      *a;
-   double      *b;
-   double     sum; 
-   int     veclen; 
-   int   numthrds;
+   double      *a; //数组指针
+   double      *b; //数组指针
+   double     sum; //点积
+   int     veclen; //数组的长度
+   int   numthrds; //线程的数
  } DOTDATA;
  
 /* Define globally accessible variables and a mutex */
- 
-#define MAXTHRDS 8
-#define VECLEN 100
-DOTDATA dotstr; 
-pthread_t callThd[MAXTHRDS];
-pthread_mutex_t mutexsum;
+//进程内、线程间共享的全局变量
+#define MAXTHRDS 8 //最大线程数
+#define VECLEN 100 //数组的长度
+DOTDATA dotstr; //定义一个DOTDATA
+pthread_t callThd[MAXTHRDS]; //定义一组线程句柄
+pthread_mutex_t mutexsum; //给sum定义一个互斥量
  
 /*
 The function dotprod has only minor changes from the code 
