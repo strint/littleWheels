@@ -128,7 +128,7 @@ pthread_mutex_t mutexsum; //给sum定义一个互斥量
 The function dotprod has only minor changes from the code 
 that used threads or MPI.  
 */
- 
+//线程函数 
 void *dotprod(void *arg)
 {
  
@@ -182,7 +182,7 @@ void *dotprod(void *arg)
 As before,the main program does very little computation. It creates
 threads on each node and the main thread does all the MPI calls. 
 */
- 
+//一个进程的main函数 
 int main(int argc, char* argv[])
 {
 int len=VECLEN, myid, numprocs; 
@@ -195,8 +195,8 @@ pthread_attr_t attr;
  
 /* MPI Initialization */
 MPI_Init (&argc, &argv);
-MPI_Comm_size (MPI_COMM_WORLD, &numprocs);
-MPI_Comm_rank (MPI_COMM_WORLD, &myid);
+MPI_Comm_size (MPI_COMM_WORLD, &numprocs); //进程数
+MPI_Comm_rank (MPI_COMM_WORLD, &myid); //进程id
  
 /* Assign storage and initialize values */
 numthrds=MAXTHRDS;
