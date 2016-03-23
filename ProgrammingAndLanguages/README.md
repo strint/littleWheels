@@ -21,3 +21,6 @@
 * 逻辑式
 * 事实 + 推理规则
 * 一个不错的简介：https://bernardopires.com/2013/10/try-logic-programming-a-gentle-introduction-to-prolog/
+
+## Rust
+http://doc.rust-lang.org/book/README.html
