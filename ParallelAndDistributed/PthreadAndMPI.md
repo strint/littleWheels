@@ -199,10 +199,11 @@ MPI_Comm_size (MPI_COMM_WORLD, &numprocs); //进程数
 MPI_Comm_rank (MPI_COMM_WORLD, &myid); //进程id
  
 /* Assign storage and initialize values */
-numthrds=MAXTHRDS;
-a = (double*) malloc (numprocs*numthrds*len*sizeof(double));
-b = (double*) malloc (numprocs*numthrds*len*sizeof(double));
-   
+numthrds=MAXTHRDS; //设定线程的数量
+a = (double*) malloc (numprocs*numthrds*len*sizeof(double)); //分配数组的存储空间
+b = (double*) malloc (numprocs*numthrds*len*sizeof(double)); //分配数组的存储空间
+
+//将数组存储空间初始化   
 for (i=0; i<len*numprocs*numthrds; i++) {
   a[i]=1;
   b[i]=a[i];
