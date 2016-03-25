@@ -70,6 +70,9 @@
  * 循环划分
  * 块-循环划分
 
+* 参考资料
+ * 教程：http://mpitutorial.com/
+ * [使用ssh在多个机器上运行](http://stackoverflow.com/questions/15903408/specify-the-machines-running-program-using-mpi#)
 
 ## 例子
 https://computing.llnl.gov/tutorials/pthreads/samples/mpithreads_both.c
