@@ -15,5 +15,4 @@ wheel 1 run for car 1
 wheel 2 run for car 1
 wheel 3 run for car 1
 Car 1 run.
-请按任意键继续. . .
 */
