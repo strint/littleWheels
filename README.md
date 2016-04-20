@@ -8,3 +8,7 @@
 * [并行和分布式程序设计](https://github.com/strint/littleWheels/tree/master/ParallelAndDistributed)
 * [机器学习](https://github.com/strint/littleWheels/tree/master/MachineLearning)
 * [记录](https://github.com/strint/strint.github.io/issues/9)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/strint/littlewheels/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
