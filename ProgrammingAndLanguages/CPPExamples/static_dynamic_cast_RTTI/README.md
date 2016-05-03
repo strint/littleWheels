@@ -4,6 +4,7 @@
 * 对象模型（object model）是指对象（class）在内存中的布局（layout），所以更准确的说法可以是对象的内存模型。
 * 对象的内存模型存储的信息主要包括成员变量、成员函数、类型信息、继承关系。其中类型信息即对应RTTI。
 * RTTI（Run-time Type Identification 或者 Run-time type information）是指对象在运行时的类型信息
+
 ### 一个实例
 定义如下三个类A、B、C
 ```cpp
