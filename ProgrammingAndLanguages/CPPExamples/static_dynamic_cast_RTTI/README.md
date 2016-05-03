@@ -53,3 +53,5 @@ class A
 ## 参考文档
 * Static_cast 与 Dynamic_cast的区别，http://www.cnblogs.com/zhyg6516/archive/2011/03/07/1971898.html
 * Reversing Microsoft Visual C++ Part II: Classes, Methods and RTTI，http://www.openrce.org/articles/full_view/23
+* C++:Under the Hood, Jan Gray, http://www.openrce.org/articles/files/jangrayhood.pdf
+* Inside the C++ Object Model, Stanley B. Lippman
