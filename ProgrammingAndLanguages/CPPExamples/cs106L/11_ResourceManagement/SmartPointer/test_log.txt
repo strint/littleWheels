@@ -1,25 +1,34 @@
-p1 content:hello template class
-p1 length:20
+---test construct a smart pointer to an object---
+p1 content:hello template class 1
+p1 length:22
 p1 refCount:1
-p1 content address:00228F50
-p1 operator->():00228F50
-p1 operator*():hello template class
+p1 content address:00374AC8
+p1 operator->():00374AC8
+p1 operator*():hello template class 1
 
-p2 content:hello template class
+---test another smart pointer to same object---
+p2 content:hello template class 1
 p1 refCount:2
 
+---test operator =---
 p3 content:hello template class 3
-p3 content:hello template class
+p3 content:hello template class 1
 p1 refCount:3
 
+---test operator *---
 p1 content:new content
 p2 content:new content
 p3 content:new content
 p1 refCount:3
 
+---test reset---
 p1 content:new content
 p2 content:new content
 p3 content:new pointer
 p1 refCount:2
 p3 refCount:1
+
+---test del---
+p1 content:new content
+p1 refCount:1
 

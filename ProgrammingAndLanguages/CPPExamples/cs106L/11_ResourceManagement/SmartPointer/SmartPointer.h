@@ -15,6 +15,8 @@ public:
 	SmartPointer<T>& operator = (const SmartPointer<T>& other);	
 	// Destructor
 	~SmartPointer(void);
+	// delete operator
+	static void operator delete(void* p);
 
 	T& operator * () const;
 	T* operator -> () const;
@@ -22,27 +24,32 @@ public:
 	size_t getShareCount() const;
 
 	void reset(T* newres);
+	 void del();
 
 private:
-	struct Intermediary {
+	struct rc {
 		T* resource;
 		size_t refCount;
 	};
-	Intermediary* data;
+	rc* data;
 
 	void detach();
-	void attach(Intermediary* other);
+	void attach(rc* other);
 };
 
 
 //模板类需要使用内含的include方式，把实现和原型放在一起
 template <typename T> SmartPointer<T>::SmartPointer(T* res) {
-	data = new Intermediary;
+	data = new rc;
 	data->resource = res;
 	data->refCount = 1;
 }
 
 template <typename T> SmartPointer<T>::~SmartPointer() {
+	detach();
+}
+
+template <typename T> void SmartPointer<T>::del() {
 	detach();
 }
 
@@ -63,21 +70,24 @@ template <typename T> size_t SmartPointer<T>::getShareCount() const {
 }
 
 template <typename T> void SmartPointer<T>::detach() {
-	--data->refCount;
+	if(data) {
+		--data->refCount;
     	if(data->refCount == 0) {
-		delete data->resource;
-		delete data;
+			delete data->resource;
+			delete data;
+		}
+		data = 0;
 	}
 }
 
-template <typename T> void SmartPointer<T>::attach(Intermediary* to) {
+template <typename T> void SmartPointer<T>::attach(rc* to) {
 	data = to;
 	++data->refCount;
 }
 
 template <typename T> void SmartPointer<T>::reset(T* newres) {
 	detach();
-	data = new Intermediary;
+	data = new rc;
 	data->resource = newres;
 	data->refCount = 1;
 }

@@ -9,8 +9,9 @@ int main() {
 	ofstream test_log;
 	test_log.open("test_log.txt");
 
+	test_log << "---test construct a smart pointer to an object---" << endl;
 	SmartPointer<string> p1(new string);
-	*p1 = "hello template class";
+	*p1 = "hello template class 1";
 
 	test_log << "p1 content:" << *p1 << endl; //*p1 = *(data->resource)
 	test_log << "p1 length:" << p1->length() << endl; //p1-> = (data->resource)
@@ -20,11 +21,14 @@ int main() {
 	test_log << "p1 operator*():" << p1.operator*() << endl; 
 	test_log << endl;
 
+	
+	test_log << "---test another smart pointer to same object---" << endl;
 	SmartPointer<string> p2(p1);
 	test_log << "p2 content:" << *p2 << endl; 
 	test_log << "p1 refCount:" << p1.getShareCount() << endl;
 	test_log << endl;
 
+	test_log << "---test operator =---" << endl;
 	SmartPointer<string> p3(new string);
 	*p3 = "hello template class 3";
 	test_log << "p3 content:" << *p3 << endl; 
@@ -33,6 +37,7 @@ int main() {
 	test_log << "p1 refCount:" << p1.getShareCount() << endl;
 	test_log << endl;
 
+	test_log << "---test operator *---" << endl;
 	*p2 = "new content";
 	test_log << "p1 content:" << *p1 << endl; 
 	test_log << "p2 content:" << *p2 << endl; 
@@ -41,6 +46,7 @@ int main() {
 	test_log << endl;
 
 
+	test_log << "---test reset---" << endl;
 	p3.reset(new string);
 	*p3 = "new pointer";
 	test_log << "p1 content:" << *p1 << endl; 
@@ -49,6 +55,14 @@ int main() {
 	test_log << "p1 refCount:" << p1.getShareCount() << endl;
 	test_log << "p3 refCount:" << p3.getShareCount() << endl;
 	test_log << endl;
+
+	test_log << "---test del---" << endl;
+	p2.del();
+	test_log << "p1 content:" << *p1 << endl; 
+	//test_log << "p2 content:" << *p2 << endl; //error
+	test_log << "p1 refCount:" << p1.getShareCount() << endl;
+	test_log << endl;
+
 
 	test_log.close();
 	return 0;
