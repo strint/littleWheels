@@ -1,4 +1,4 @@
 # LeeCode Solutions 
 
 ## Linked List
-* 61_Rotate List：间隔一定距离的两个指针
+* 61 Rotate List：间隔一定距离的两个指针
