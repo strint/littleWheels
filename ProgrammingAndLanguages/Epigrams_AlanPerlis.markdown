@@ -115,7 +115,7 @@
 
 57. It is easier to change the specification to fit the program than vice versa.
 
-58. **Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.对于问题的复杂性，傻瓜程序员没有意识到它，功利的程序员深陷于它，有些程序员试图规避它，天才的程序员消灭它。**
+58. **Fools ignore complexity. Pragmatists suffer it. Some can avoid it. Geniuses remove it.对于问题的复杂性，傻瓜程序员没有意识到它，急躁的程序员深陷于它，有些程序员试图逃避它，天才的程序员消灭它。**
 
 59. In English every word can be verbed. Would that it were so in our programming languages.
 
@@ -237,8 +237,8 @@
 
 118. If you can imagine a society in which the computer- robot is the only menial, you can imagine anything.
 
-119. Programming is an unnatural act.
+119. Programming is an unnatural act.编程是一种不自然的行为。
 
-120. Adapting old programs to fit new machines usually means adapting new machines to behave like old ones.
+120. Adapting old programs to fit new machines usually means adapting new machines to behave like old ones.将旧的程序移植到新的机器上，往往意味着让新的机器按照旧机器的方式来解决问题。
 
 > From ACM's SIGPLAN publication, (September, 1982), Article "Epigrams in Programming", by Alan J. Perlis of Yale University.http://www.cs.yale.edu/homes/perlis-alan/quotes.html
