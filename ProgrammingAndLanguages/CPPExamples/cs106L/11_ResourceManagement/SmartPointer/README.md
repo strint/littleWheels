@@ -1,4 +1,11 @@
 # 基于引用计数的智能指针的实现
+
+## 源代码及测试
+见[上面文件夹](https://github.com/strint/littleWheels/tree/master/ProgrammingAndLanguages/CPPExamples/cs106L/11_ResourceManagement/SmartPointer)中的 `SmartPointer.h`、`main.cpp`、`test_log.txt`
+* `SmartPointer.h` 是SmartPointer的实现
+* `main.cpp` 是对SmartPointer的测试
+* `test_log.txt` 是测试输出的结果
+* 
 ## 智能指针
 对于多个指针指向同一对象的情况：当新的指针指向已经存在的对象，不应该在内存中分配新空间，而应该让新指针指向已经生成的对象；当某个指针的生命周期结束，或者要delete某个指针时，需要保证在没有指针指向该对象，然后才释放该对象的内存。能够达到以上目的指针叫做智能指针（Smart Pointer）。在 C++ 11 中，这种指针的名字是 [shared_ptr](http://en.cppreference.com/w/cpp/memory/shared_ptr).
 
@@ -66,7 +73,7 @@ private:
 	void attach(rc* other);
 };
 ```
-实现见[GitHug文件夹](https://github.com/strint/littleWheels/tree/master/ProgrammingAndLanguages/CPPExamples/cs106L/11_ResourceManagement/SmartPointer)中的 `SmartPointer.h`
+实现见[上面文件夹](https://github.com/strint/littleWheels/tree/master/ProgrammingAndLanguages/CPPExamples/cs106L/11_ResourceManagement/SmartPointer)中的 `SmartPointer.h`
 
 ## 使用举例
 * 构造一个指向string类型的智能指针`p1`，并初始化成`hello template class 1`
@@ -112,12 +119,6 @@ private:
 ```
 	p2.del();
 ```
-
-## 源代码及测试
-见[GitHub文件夹](https://github.com/strint/littleWheels/tree/master/ProgrammingAndLanguages/CPPExamples/cs106L/11_ResourceManagement/SmartPointer)中的 `SmartPointer.h`、`main.cpp`、`test_log.txt`
-* `SmartPointer.h` 是SmartPointer的实现
-* `main.cpp` 是对SmartPointer的测试
-* `test_log.txt` 是测试输出的结果
 
 ## 参考资料
 * Stanford CS106L, Chapter 11, Resource Management.
