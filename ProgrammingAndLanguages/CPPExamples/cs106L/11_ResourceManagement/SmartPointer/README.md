@@ -99,11 +99,11 @@ private:
 ```
 * 构造智能指针`p2`，使它指向与`p1`相同的内容
 ```
-	SmartPointer<string> p2(p1)
+	SmartPointer<string> p2(p1);
 ```
 * 构造一个指向string类型的智能指针`p3`，并初始化成`hello template class 3`
 ```
-	SmartPointer<string> p3(new string)
+	SmartPointer<string> p3(new string);
 	*p3 = "hello template class 3";
 ```
 * 让`p3`指向与`p1`相同的内容
