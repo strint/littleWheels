@@ -5,7 +5,7 @@
 * `SmartPointer.h` 是SmartPointer的实现
 * `main.cpp` 是对SmartPointer的测试
 * `test_log.txt` 是测试输出的结果
-* 
+
 ## 智能指针
 对于多个指针指向同一对象的情况：当新的指针指向已经存在的对象，不应该在内存中分配新空间，而应该让新指针指向已经生成的对象；当某个指针的生命周期结束，或者要delete某个指针时，需要保证在没有指针指向该对象，然后才释放该对象的内存。能够达到以上目的指针叫做智能指针（Smart Pointer）。在 C++ 11 中，这种指针的名字是 [shared_ptr](http://en.cppreference.com/w/cpp/memory/shared_ptr).
 
