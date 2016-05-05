@@ -35,9 +35,45 @@ private:
 ```
 
 管理引用计数结构体的逻辑如下：
-* 当初始生成一个对象时，new一个T类型的对象，new一个引用计数结构体`rc`，让`rc`中的`resource`指向对象，让`data`指向这个`rc`，将`refCount`置为1；
+* 当初始生成一个对象时，new一个T类型的对象，new一个引用计数结构体`rc`，让`rc`中的`resource`指向对象，让`data`指向这个`rc`，将`refCount`置为1.
+ * 按照此逻辑实现的构造函数（传入的参数是指向一个对象的指针）
+```
+template <typename T> SmartPointer<T>::SmartPointer(T* res) {
+	data = new rc;
+	data->resource = res;
+	data->refCount = 1;
+}
+```
+
 * 当一个智能指针指向已经生成的对象时，只是让它的`data`指向引用计数结构体`rc`，然后让`rc`中的`refCount`加1；
+ * 按照此逻辑实现的复制构造函数
+ ```
+template <typename T> void SmartPointer<T>::attach(rc* to) {
+	data = to;
+	++data->refCount;
+}
+template <typename T> SmartPointer<T> ::SmartPointer(const SmartPointer& other) {
+	attach(other.data); //sibling access
+}
+ ```
+
 * 当删除一个智能指针时，先让`rc`中的`refCount`减1，然后判断`refCount`是否为0，只有当`refCount`为0时才释放`resource`指向的内存。
+ * 按照此逻辑实现的del函数
+ ```
+template <typename T> void SmartPointer<T>::detach() {
+	if(data) {
+		--data->refCount;
+    	if(data->refCount == 0) {
+			delete data->resource;
+			delete data;
+		}
+		data = 0;
+	}
+}
+template <typename T> void SmartPointer<T>::del() {
+	detach();
+}
+```
 
 ## 智能指针的接口
 ```
