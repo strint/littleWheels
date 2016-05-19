@@ -1,6 +1,42 @@
 # LeeCode Solutions 
 
+## Bit Manipulation
+https://leetcode.com/tag/bit-manipulation/
+
+## Greedy
+https://leetcode.com/tag/greedy/
+
+## Sort
+https://leetcode.com/tag/sort/
+
+## Binary Search
+https://leetcode.com/tag/binary-search/
+
+## Tree
+https://leetcode.com/tag/tree/
+
+## BFS
+https://leetcode.com/tag/breadth-first-search/
+
+## DFS
+https://leetcode.com/tag/depth-first-search/
+
+## Stack
+https://leetcode.com/tag/stack/
+
+## Backtracking
+https://leetcode.com/tag/backtracking/
+
+## Dynamic Programming
+https://leetcode.com/tag/dynamic-programming/
+
+## Two Pointers
+https://leetcode.com/tag/two-pointers/
+
+
 ## Linked List
+https://leetcode.com/tag/linked-list/
+
 * 判断空指针、链表尾部、在链表上遍历，求链表的长度
  * 2 https://leetcode.com/problems/add-two-numbers/ 
 
