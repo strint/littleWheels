@@ -30,6 +30,8 @@ https://leetcode.com/tag/backtracking/
 ## Dynamic Programming
 https://leetcode.com/tag/dynamic-programming/
 
+* 64 https://leetcode.com/problems/minimum-path-sum/
+
 ## Two Pointers
 https://leetcode.com/tag/two-pointers/
 * 标记起始位置
