@@ -32,6 +32,7 @@ https://leetcode.com/tag/dynamic-programming/
 
 * 64 https://leetcode.com/problems/minimum-path-sum/
 * 91 https://leetcode.com/problems/decode-ways/ 一步、两步上台阶
+* 96 https://leetcode.com/problems/unique-binary-search-trees/
 
 ## Two Pointers
 https://leetcode.com/tag/two-pointers/
