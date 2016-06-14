@@ -30,7 +30,8 @@ https://leetcode.com/tag/backtracking/
 ## Dynamic Programming
 https://leetcode.com/tag/dynamic-programming/
 
-* 64 https://leetcode.com/problems/minimum-path-sum/
+* 53 https://leetcode.com/problems/maximum-subarray/ 不是动态规划问题
+* 64 https://leetcode.com/problems/minimum-path-sum/　
 * 91 https://leetcode.com/problems/decode-ways/ 一步、两步上台阶
 * 96 https://leetcode.com/problems/unique-binary-search-trees/
 * 95 https://leetcode.com/problems/unique-binary-search-trees-ii/
