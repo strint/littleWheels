@@ -43,7 +43,7 @@ https://leetcode.com/tag/dynamic-programming/
  * 120 https://leetcode.com/problems/triangle/
 * 序列
  * 53 https://leetcode.com/problems/maximum-subarray/ 不是动态规划问题
- * 121 https://leetcode.com/submissions/detail/63293439/
+ * 121 https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 ## Two Pointers
 https://leetcode.com/tag/two-pointers/
