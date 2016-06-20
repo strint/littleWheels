@@ -22,7 +22,7 @@
 
 ##### Scala programming on Spark
 ###### Spark
-* MapRduce
+* MapReduce
  * 有向无环的数据流
  * 在内存中没有working set，将数据写到磁盘，然后再加载到内存
 * Spark
