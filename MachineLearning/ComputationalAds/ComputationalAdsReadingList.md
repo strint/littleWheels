@@ -29,6 +29,7 @@
  * 有向无环的数据流 和 有环的数据流
  * 在内存中有working set，可以方便做内存计算
  * 基于RDD，便于创建working set
+ * 支持fault tolerant, locality-aware scheduling, load balancing
  * Fault-Tolerant: checkpointing the data or log the ops on data，Spark使用的是后者，记录了lineage（数据的家谱）
  * 适合数据并行、批处理模式
 
@@ -44,3 +45,6 @@
 
 
 ### 学习李航的《统计学习方法》、PRML等机器学习相关的书
+#### 李航的《统计学习方法》
+#### PRML
+#### 西瓜书
