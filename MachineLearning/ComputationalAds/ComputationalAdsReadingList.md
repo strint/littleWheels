@@ -1,6 +1,28 @@
 ## 阅读清单
 
 ### 熟悉朴素贝叶斯、最大熵等模型在文本分类上的应用，了解优缺点
+#### 朴素贝叶斯分类
+##### 贝叶斯分类
+* ci表示类别i
+* W代表特征向量(w0, ..., wn)
+* 先验概率：p(ci)
+* 似然概率：p(W | ci)
+* 后验概率：p(ci | W)
+* p(ci | W) = p(W | ci) * p(ci) / p(W)
+* 后验概率 正比于 先验概率 * 似然概率
+* Naive Bayes
+ * 假设特征之间互相独立
+ * p(W | ci) = p(w0, ..., wn | ci) = p(w0 | ci) * ... * p(wn | ci)
+
+##### 文本分类
+* 将文本根据特征词典处理成特征向量
+
+##### 最大熵模型
+* http://icl.pku.edu.cn/ICLseminars/2003spring/%E6%9C%80%E5%A4%A7%E7%86%B5%E6%A8%A1%E5%9E%8B.pdf
+* http://jiangtanghu.com/docs/cn/maxEnt.pdf
+* file:///C:/Users/think/Downloads/%E4%BD%BF%E7%94%A8%E6%9C%80%E5%A4%A7%E7%86%B5%E6%A8%A1%E5%9E%8B%E8%BF%9B%E8%A1%8C%E4%B8%AD%E6%96%87%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.pdf
+
+
 
 
 ### 了解 audience selection, look alike 相关的论文
