@@ -1,5 +1,8 @@
-## EPIGRAMS IN PROGRAMMING 关于编程的段子
-> 作者： [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wiki/Alan_Perlis)
+## 编程论语 EPIGRAMS IN PROGRAMMING 
+作者： [Alan J. Perlis艾伦·佩利，1966年图灵奖](https://en.wikipedia.org/wiki/Alan_Perlis)
+
+> 作为一个长者，我有必要给你们传授一点人生的经验。—— 长者
+
 
 1. One man's constant is another man's variable. 一个人的常量是另一个人的变量。
 
