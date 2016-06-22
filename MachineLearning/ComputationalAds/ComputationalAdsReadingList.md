@@ -13,9 +13,13 @@
 * Naive Bayes
  * 假设特征之间互相独立
  * p(W | ci) = p(w0, ..., wn | ci) = p(w0 | ci) * ... * p(wn | ci)
+* p(W)的问题
 
 ##### 文本分类
 * 将文本根据特征词典处理成特征向量
+* [naiveBayes](./naiveBayes)文件夹包含了使用朴素贝叶斯进行文本分类的例子
+ * `bayes.py`包括了朴素贝叶斯分类的实现和使用
+ * 在ipython下运行 `%run bayes.py`，然后运行`testingNB()`
 
 ##### 最大熵模型
 * http://icl.pku.edu.cn/ICLseminars/2003spring/%E6%9C%80%E5%A4%A7%E7%86%B5%E6%A8%A1%E5%9E%8B.pdf
