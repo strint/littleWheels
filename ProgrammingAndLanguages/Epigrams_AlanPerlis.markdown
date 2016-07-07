@@ -40,7 +40,7 @@
 
 18. A program without a loop and a structured variable isn't worth writing.一个没有循环、没有复合数据结构的程序时不值得写的。
 
-19. A language that doesn't affect the way you think about programming, is not worth knowing.一不能影响你思考方式的编程语言是不知道学习的。
+19. A language that doesn't affect the way you think about programming, is not worth knowing.一个不能影响你思考方式的编程语言是不值得学习的。
 
 20. **Wherever there is modularity there is the potential for misunderstanding: Hiding information implies a need to check communication.模块化的地方就是误解产生的地方；信息隐藏的代价是需要检查通信的正确性。**
 
