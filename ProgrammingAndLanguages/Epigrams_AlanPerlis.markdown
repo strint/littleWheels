@@ -8,7 +8,7 @@
 
 2. Functions delay binding; data structures induce binding. Moral: Structure data late in the programming process.函数推迟了绑定，数据结构引发了绑定。寓意：编程时先考虑函数后考虑数据结构。
 
-3. Syntactic sugar causes cancer of the semicolon.（在函数式程序中，）语法糖会导致分号的癌症。
+3. Syntactic sugar causes cancer of the semicolon.（在函数式程序中，）语法糖会导致分号癌症。
 
 4. Every program is a part of some other program and rarely fits.每个程序（从功能上讲）都可以作为其它程序的一部分，但是（从接口上讲）却难以组合到其它程序中。
 
@@ -54,11 +54,11 @@
 
 25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.
 
-26. There will always be things we wish to say in our programs that in all known languages can only be said poorly.
+26. There will always be things we wish to say in our programs that in all known languages can only be said poorly.总会存在某些我们想在程序中描述的东西，使用现有的编程语言不能很好的表达。
 
-27. **Once you understand how to write a program get someone else to write it.**
+27. Once you understand how to write a program get someone else to write it.一旦你理解了如何去写一个程序，就让其他人来完成这个程序吧。
 
-28. Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?
+28. Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?对于程序，找到一个估计进度的时间单位是困难的。说一个教堂花费了上百年时间建成，人们会猜想这个教堂肯定很壮丽和宏伟。但是如果说一个程序花了上百年写完，人们恐怕不会有类似的感觉。
 
 29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.
 
