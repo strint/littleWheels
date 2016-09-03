@@ -26,6 +26,8 @@ https://leetcode.com/tag/stack/
 
 ## Backtracking
 https://leetcode.com/tag/backtracking/
+* https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+* https://leetcode.com/problems/generate-parentheses/
 
 ## Dynamic Programming
 https://leetcode.com/tag/dynamic-programming/
