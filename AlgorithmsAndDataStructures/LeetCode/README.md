@@ -20,14 +20,24 @@ https://leetcode.com/tag/breadth-first-search/
 
 ## DFS
 https://leetcode.com/tag/depth-first-search/
+* https://leetcode.com/problems/same-tree/
+* https://leetcode.com/problems/symmetric-tree/
+* https://leetcode.com/problems/maximum-depth-of-binary-tree/
+* https://leetcode.com/problems/minimum-depth-of-binary-tree/
+* https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/
+* https://leetcode.com/problems/balanced-binary-tree/
+* https://leetcode.com/problems/path-sum/
 
 ## Stack
 https://leetcode.com/tag/stack/
+* https://leetcode.com/problems/valid-parentheses/
+* https://leetcode.com/problems/min-stack/
 
 ## Backtracking
 https://leetcode.com/tag/backtracking/
 * https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 * https://leetcode.com/problems/generate-parentheses/
+* https://leetcode.com/problems/combination-sum/
 
 ## Dynamic Programming
 https://leetcode.com/tag/dynamic-programming/
