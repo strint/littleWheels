@@ -2,21 +2,36 @@
 
 ## Bit Manipulation
 https://leetcode.com/tag/bit-manipulation/
+* https://leetcode.com/problems/majority-element/
 
 ## Greedy
 https://leetcode.com/tag/greedy/
 
 ## Sort
 https://leetcode.com/tag/sort/
+* 75 https://leetcode.com/problems/sort-colors/
+* 147 https://leetcode.com/problems/insertion-sort-list/
+* 148 https://leetcode.com/problems/sort-list/
 
 ## Binary Search
 https://leetcode.com/tag/binary-search/
+* 29 https://leetcode.com/problems/divide-two-integers/
+* 34 https://leetcode.com/problems/search-for-a-range/
+* 35 https://leetcode.com/problems/search-insert-position/
 
 ## Tree
 https://leetcode.com/tag/tree/
+* 112 https://leetcode.com/problems/path-sum/
+* 96 https://leetcode.com/problems/unique-binary-search-trees/
+* 95 https://leetcode.com/problems/unique-binary-search-trees-ii/
 
 ## BFS
 https://leetcode.com/tag/breadth-first-search/
+* https://leetcode.com/tag/breadth-first-search/
+* https://leetcode.com/problems/minimum-depth-of-binary-tree/
+* https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
+* https://leetcode.com/problems/binary-tree-level-order-traversal/
+* https://leetcode.com/problems/symmetric-tree/
 
 ## DFS
 https://leetcode.com/tag/depth-first-search/
