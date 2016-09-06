@@ -2,7 +2,7 @@
 
 ## Bit Manipulation
 https://leetcode.com/tag/bit-manipulation/
-* https://leetcode.com/problems/majority-element/
+* 169 https://leetcode.com/problems/majority-element/
 
 ## Greedy
 https://leetcode.com/tag/greedy/
