@@ -66,7 +66,7 @@
 
 31. **Simplicity does not precede complexity, but follows it.程序的开发的过程中，先体现出复杂性，然后才体现出简洁性。**
 
-32. Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.
+32. Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.对程序员来说，思考的完整性要比聪明和思考逻辑性更重要。
 
 33. The eleventh commandment was "Thou Shalt Compute" or "Thou Shalt Not Compute" - I forget which.
 
@@ -74,7 +74,7 @@
 
 35. Everyone can be taught to sculpt: Michelangelo would have had to be taught not to. So it is with great programmers.
 
-36. The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics.
+36. The use of a program to prove the 4-color theorem will not change mathematics - it merely demonstrates that the theorem, a challenge for a century, is probably not important to mathematics.使用计算机程序来证明四色问题对数学本身没有什么贡献，它只是证明了这个百年未解的数学难题实际上对数学本身来说是不重要的。
 
 37. The most important computer is the one that rages in our skulls and ever seeks that satisfactory external emulator. The standarization of real computers would be a disaster - and so it probably won't happen.
 
@@ -82,9 +82,9 @@
 
 39. Re graphics: A picture is worth 10K words - but only those to describe the picture. Hardly any sets of 10K words can be adequately described with pictures.
 
-40. There are two ways to write error-free programs; only the third one works.
+40. There are two ways to write error-free programs; only the third one works.有两种写出无bug程序的方法，但只有第三种方法是可以完成程序的。
 
-41. Some programming languages manage to absorb change, but withstand progress.
+41. Some programming languages manage to absorb change, but withstand progress.一些编程语言不停努力的改变，但却拒绝进步。
 
 42. You can measure a programmer's perspective by noting his attitude on the continuing vitality of FORTRAN.
 
@@ -98,7 +98,7 @@
 
 47. As Will Rogers would have said, "There is no such thing as a free variable."
 
-48. The best book on programming for the layman is "Alice in Wonderland"; but that's because it's the best book on anything for the layman.
+48. The best book on programming for the layman is "Alice in Wonderland"; but that's because it's the best book on anything for the layman.对门外汉来说，最好的编程书籍是《爱丽丝梦游仙境》。因为不管是什么领域，只要是门外汉，这本书都是最好的。
 
 49. Giving up on assembly language was the apple in our Garden of Eden: Languages whose use squanders machine cycles are sinful. The LISP machine now permits LISP programmers to abandon bra and fig-leaf.
 
