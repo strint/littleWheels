@@ -9,6 +9,6 @@
  * 后向传播算法的计算效率的提升可以用算法中的Dynamic Programming来解释，即后向传播算法是一种DP算法
  * 为什么BP算法思路并不难，单是却发现的比较晚？神经网络因为没有很好的求解方法（开始并不知道可以用梯度下降法去求解），所以被认为是不实用；然后因为被认为是不实用的所以就没有人去研究好的求解方法。这产生了一种循环依赖，一种死循环，导致研究没有进展。
 * 全倒数公式和链式法则：连线相乘, 分叉相加, 单路全导, 叉路偏导，[参见课件](http://wenku.baidu.com/link?url=FNI0M1MZnXS4_z3DieE4wXrmWEUVA8th2HvkalN98JvXq7quG3KQrnipNQlxC6syTIrWsjnLOR7YvjU5J05uHWzMG11K92D21eQo68QhA0W)
-
+* 
 
 
