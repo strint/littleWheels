@@ -28,7 +28,7 @@
 
 12. **Recursion is the root of computation since it trades description for time.递归体现了计算的本质：用（精巧的）描述来换取时间（的节约）。**
 
-13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.
+13. If two people write exactly the same program, each should be put into microcode and then they certainly won't be the same.两个人实现同样功能的程序但是实现一定不同，因为在微程序的层面看，程序一定不一样。
 
 14. In the long run every program becomes rococo - then rubble.长期地来讲，任何代码都会过时，最终被废弃。
 
@@ -52,7 +52,7 @@
 
 24. Perhaps if we wrote programs from childhood on, as adults we'd be able to read them.如果我们从小时候就开始写程序的话...那么成年了我们应该就看不懂那时写的代码了。
 
-25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.
+25. One can only display complex information in the mind. Like seeing, movement or flow or alteration of view is more important than the static picture, no matter how lovely.复杂信息只存在于思维中，就像再好的照片也不如动态的视频内容丰富。
 
 26. There will always be things we wish to say in our programs that in all known languages can only be said poorly.总会存在某些我们想在程序中描述的东西，使用现有的编程语言不能很好的表达。
 
@@ -60,13 +60,13 @@
 
 28. Around computers it is difficult to find the correct unit of time to measure progress. Some cathedrals took a century to complete. Can you imagine the grandeur and scope of a program that would take as long?对于程序，找到一个估计进度的时间单位是困难的。说一个教堂花费了上百年时间建成，人们会猜想这个教堂肯定很壮丽和宏伟。但是如果说一个程序花了上百年写完，人们恐怕不会有类似的感觉。
 
-29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.
+29. For systems, the analogue of a face-lift is to add to the control graph an edge that creates a cycle, not just an additional node.系统的整容除了在控制图中增加一个节点之外，还有在控制图中增加一个边从而制造一个环。
 
-30. **In programming, everything we do is a special case of something more general -- and often we know it too quickly.**
+30. **In programming, everything we do is a special case of something more general -- and often we know it too quickly.编程中，我们太早地意识到我们写的程序不过是别的程序的特例。**
 
 31. **Simplicity does not precede complexity, but follows it.程序的开发的过程中，先体现出复杂性，然后才体现出简洁性。**
 
-32. Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.对程序员来说，思考的完整性要比聪明和思考逻辑性更重要。
+32. **Programmers are not to be measured by their ingenuity and their logic but by the completeness of their case analysis.对程序员来说，思考的完整性要比聪明和思考逻辑性更重要。**
 
 33. The eleventh commandment was "Thou Shalt Compute" or "Thou Shalt Not Compute" - I forget which.
 
