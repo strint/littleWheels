@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 #include <set>
 #include <string>
@@ -32,6 +33,15 @@ struct Item {
     }
 };
 
+struct item_find_by_id {
+    item_find_by_id(const std::string & id_to_find) : id(id_to_find) {}
+    bool operator() (const Item &it) {
+        return it.id == id;
+    }
+private:
+    std::string id;
+};
+
 int main() {
     Item i2;
     i2.id = "b";
@@ -61,6 +71,14 @@ int main() {
     if (f_i != i_set.end()) {
         cout << " src " << i4.toString() << endl;
         cout << " find " << f_i->toString() << endl;
+    } else {
+        cout << " can not find " << i4.toString() << endl;
+    }
+
+    auto f_i2 = std::find_if(i_set.begin(), i_set.end(), item_find_by_id(i4.id));
+    if (f_i2 != i_set.end()) {
+        cout << " src " << i4.toString() << endl;
+        cout << " find " << f_i2->toString() << endl;
     } else {
         cout << " can not find " << i4.toString() << endl;
     }
