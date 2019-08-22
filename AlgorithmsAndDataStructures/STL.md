@@ -9,20 +9,20 @@
 * list
 * slist：非STL标准
 * deque
- * stack：配接器
- * queue：配接器 
+  * stack：配接器
+  * queue：配接器 
 
 #### 关联式容器
 * RB-tree：非公开的，STL内部使用
- * set
- * map
- * multiset
- * multimap
+  * set
+  * map
+  * multiset
+  * multimap
 * hashtable
- * hash-set
- * hash-map
- * hash-multiset
- * hash-multimap
+  * hash-set
+  * hash-map
+  * hash-multiset
+  * hash-multimap
 
 以上列表中的层次关系代表容器间的内含关系，例如heap中内含一个vector，priority-queue中内含一个heap，set、map中都内含一个RB-tree。
 
