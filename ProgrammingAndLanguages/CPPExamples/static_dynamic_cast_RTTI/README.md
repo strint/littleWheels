@@ -11,33 +11,32 @@
 ### 一个实例
 定义如下三个类A、B、C
 ```cpp
+class A {
+  private:
+    int a1;
+  public:
+    virtual int A_virt1();
+    virtual int A_virt2();
+    static void A_static1();
+    void A_simple1();
+};
 
-class A
-    {
-      int a1;
-    public:
-      virtual int A_virt1();
-      virtual int A_virt2();
-      static void A_static1();
-      void A_simple1();
-    };
+class B {
+  private:
+    int b1;
+    int b2;
+  public:
+    virtual int B_virt1();
+    virtual int B_virt2();
+};
 
-    class B
-    {
-      int b1;
-      int b2;
-    public:
-      virtual int B_virt1();
-      virtual int B_virt2();
-    };
-
-    class C: public A, public B
-    {
-      int c1;
-    public:
-      virtual int A_virt2();
-      virtual int B_virt2();
-    };
+class C: public A, public B {
+  private: 
+    int c1;
+  public: 
+    virtual int A_virt2();
+    virtual int B_virt2();
+};
 
 ```
 那么A、B、C的内存模型如下图：
